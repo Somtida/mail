@@ -5,6 +5,9 @@
   overflow-x: : hidden;
   width: 100%;
   height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
 }
 .top {
   height: 70px;
@@ -47,6 +50,9 @@
 .bar {
   position: absolute;
   left: 90%;
+}
+.bar a {
+  color: gray;
 }
 .topicList {
   min-height: 100vh;
@@ -91,6 +97,9 @@
 }
 .data {
   /*text-align: center;*/
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 .subject p{
   font-size: 24px;
@@ -113,11 +122,13 @@
 
 }
 .clicked {
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 .inputBox {
   text-align: center;
   height: 100%;
+  position: fixed;
+  bottom: 20%;
 }
 #inputText {
   width: 90%;
