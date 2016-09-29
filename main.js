@@ -5,7 +5,7 @@ function init() {
 }
 
 function clickTopic() {
-  console.log(event);
+  console.log(event.target.offsetTop);
   // let selected = event.target.id;
   let $div = $('.info').clone();
   $div.removeClass('info');
