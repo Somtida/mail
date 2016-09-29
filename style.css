@@ -133,16 +133,12 @@ html, body {
 
 }
 .clicked {
-  position: absolute;
-  color: #fff;
-  left: 450px;
-  background-color: yellow;
+  display: none;
 }
 .selected {
   position: absolute;
   color: #fff;
   left: 390px;
-  top: 20px;
   /*background-color: yellow;*/
 
 }

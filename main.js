@@ -6,12 +6,11 @@ function init() {
 
 function clickTopic() {
   console.log(event.target.offsetTop);
-  // let selected = event.target.id;
+  let top = event.target.offsetTop;
   let $div = $('.info').clone();
   $div.removeClass('info');
-  // $(event.target).css('background-color', 'red');
+  $(event.target).append('<div class="selected" style=`top:${top}px;`>&#9664;</div>');
   // $(event.target).addClass('selected');
-  $(event.target).append('<div class="selected">&#9664;</div>');
 
   $('.detail').empty().append($div);
 }
