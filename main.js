@@ -1,11 +1,11 @@
 $( document ).ready(init);
 
 function init() {
-  $('.topicList').click(clickTopic);
+  $('.topicList').click('topic', clickTopic);
 }
 
 function clickTopic() {
-  console.log('click');
+  console.log(this);
   let $div = $('.info').clone();
   $div.removeClass('info');
   $(this).addClass('clicked');
